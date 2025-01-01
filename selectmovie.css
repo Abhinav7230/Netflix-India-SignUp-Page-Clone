@@ -1,0 +1,68 @@
+.select-movies-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  padding-top: 20px;
+  margin-bottom: 64px;
+  position: relative; /* Important for button positioning */
+}
+
+.tab-movies {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap; 
+}
+
+.tab-movies ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tab-movies::-webkit-scrollbar {
+  display: none;
+}
+
+.poster img {
+  border-radius: 8px;
+}
+
+.button-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  transition: all 10s ease;
+  width: 40px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.scroll-button {
+  all: unset;
+  width: 60%;
+  height: 40%;
+  background-color: #1A1A1A;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-scroll.hidden {
+  opacity: 0;
+  transform: translateY(-50%) scale(0.9);
+  pointer-events: none; /* Prevent clicks during fade */
+}

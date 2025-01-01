@@ -1,0 +1,22 @@
+@media (max-width: 1200px) {
+    .navbar{
+        padding: 0 2rem;
+    }
+    
+}
+@media (max-width: 960px) {
+    .navbar{
+        padding: 0 1rem;
+    }
+    .logo-img{
+        height: 25px;
+    }
+}
+@media (max-width: 590px) {
+    .language-text{
+        display: none;
+    }
+    .language-box {
+        width: 40px;
+    }
+}

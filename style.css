@@ -1,0 +1,256 @@
+body {
+    font-family: 'NetflixSans', sans-serif;
+    background-color: black;
+}
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('/Fonts/NetflixSans-Regular.woff2') format('woff2'),
+         url('/Fonts/NetflixSans-Regular.otf') format('opentype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'NetflixSans';
+    src: url('/Fonts/NetflixSans-Bold.woff2') format('woff2'),
+         url('/Fonts/NetflixSans-Bold.otf') format('opentype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'NetflixSans';
+    src: url('/Fonts/NetflixSans-Light.woff2') format('woff2'),
+         url('/Fonts/NetflixSans-Light.otf') format('opentype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'NetflixSans';
+    src: url('/Fonts/NetflixSans-Medium.woff2') format('woff2'),
+         url('/Fonts/NetflixSans-Medium.otf') format('opentype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
+* {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'NetflixSans', sans-serif;
+}
+
+.header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9.25rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 120rem;
+}
+.innernavbar{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-img {
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+.container {
+    position: relative;
+    display:flex;
+    gap: 10px;
+}
+
+.language-selector {
+    display: inline-block;
+    position: relative;
+    background-color: rgb(31, 31, 31);;
+}
+
+.language-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #8b8b8b;
+    border-radius: 4px;
+    width: 100px;
+    height: 32px;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+option{
+    color: black;
+}
+.language-global-svg img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language-text {
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.language-box select {
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+.signIn:hover{
+    background-color: #C11119;
+    transition: background-color 0.5s ease;
+}
+.signIn{
+    width: 77px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #E50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.language-text{
+    font-weight: 400;
+    font-size: 16px;
+}
+.email-input::placeholder {
+    color: #A8A7A7;
+    font-weight: 400;
+  }
+.upper-content{
+    background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;    
+    width: 100%;
+    height: 98.5vh;            
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h111{
+    width: 80%;
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+.para{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.para2{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+}
+.input{
+    width: 70%;
+}
+.input-form{
+    width: 70%;
+    height: 100%;
+}
+.email-input{
+    all: unset;
+    text-align: left;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #141414e5;
+    border: 2px solid rgb(92, 90, 90);
+    border-radius: 4px;
+    color: white;
+}
+.submit-button span{
+    font-size: 24px;
+    font-weight: 500;
+}
+.submit-button{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    border: #E50914 solid 1px;
+    width: 40%;
+    height: 100%;
+    background-color: #E50914;
+    color: white;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: #C11119;
+    transition: background-color 0.5s ease;
+}
+.middle-img{ 
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    background-image: url('./assets/dividerpicedit.png');
+    background-repeat: no-repeat;
+    background-position: center center;    
+    width: 100%;
+    height: 65px;            
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin-bottom: 5px;
+}
